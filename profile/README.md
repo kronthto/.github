@@ -8,7 +8,8 @@ The project aims to:
 
 For more information, see:
 - [A Vision for Passkeys on the Linux desktop](https://alfioemanuele.io/dev/2024/01/31/a-vision-for-passkeys-on-the-linux-desktop.html) (by [AlfioEmanueleFresta](https://github.com/AlfioEmanueleFresta))
-- [Linux Passkeys Update](https://www.iinuwa.xyz/blog/linux-passkeys-update/) (by [iinuwa](https://github.com/iinuwa)
+- [Linux Passkeys Update](https://www.iinuwa.xyz/blog/linux-passkeys-update/) (by [iinuwa](https://github.com/iinuwa))
+- [Credentials for Linux: Bringing Passkeys to the Linux desktop](https://alfioemanuele.io/talks/2026/02/01/fosdem-2026-credentials-for-linux.html) (FOSDEM 2026 talk)
 
 This project merges and evolves previous efforts, including:
 
@@ -25,7 +26,7 @@ The project is composed of multiple repositories:
   - No longer relies on Mozilla's [authenticator-rs][authenticator-rs]
   - Supporting multiple transports (currently USB HID, BLE, and Hybrid Transport). The library is designed to have pluggable transport implementations, making it easy to add transport backends (NFC is planned)
 
-- **[platform-api][platform-api]**: API proposal and reference implementation for a service which will expose FIDO2 and FIDO U2F Platform APIs via a D-Bus interface, for desktop applications to use - including containerized apps such as Flatpaks.
+- **[credentialsd][credentialsd]**: API proposal and reference implementation for a service which will expose FIDO2 and FIDO U2F Platform APIs via a D-Bus interface, for desktop applications to use - including containerized apps such as Flatpaks.
 
   - Similarly to [xdg-desktop-portal][xdg-desktop-portal] and [xdg-documents-portal][xdg-documents-portal], the service is intended to be accessed over a proposed D-Bus portal
 
@@ -64,6 +65,7 @@ Here is a list of related APIs available on other platforms, which offer similar
 
 We welcome contributions!
 
+- Join the [#credentials-for-linux:matrix.org][matrix] chatroom on Matrix.
 - Check out the _Issues_ tab of [each repository](#repositories).
 - Areas needing expertise:
 
@@ -85,7 +87,7 @@ We welcome contributions!
   - **UI/UX**
 
 [libwebauthn]: https://github.com/linux-credentials/libwebauthn
-[platform-api]: https://github.com/iinuwa/linux-webauthn-platform-api
+[credentialsd]: https://github.com/linux-credentials/credentialsd
 [xdg-portal]: https://flatpak.github.io/xdg-desktop-portal/portal-docs.html
 [linux-credentials]: https://github.com/linux-credentials
 [xdg-desktop-portal]: https://github.com/flatpak/xdg-desktop-portal
@@ -110,3 +112,4 @@ We welcome contributions!
 [apple-apis]: https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession
 [passkeys]: https://fidoalliance.org/passkeys/
 [blog-1]: https://alfioemanuele.io/dev/2024/01/31/a-vision-for-passkeys-on-the-linux-desktop.html
+[matrix]: https://matrix.to/#/#credentials-for-linux:matrix.org
